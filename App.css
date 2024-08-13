@@ -1,0 +1,67 @@
+body {
+  font-family: 'Arial', sans-serif;
+  background: linear-gradient(to right, #4facfe, #090351);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.weather-app {
+  background: rgba(255, 255, 255, 0.1);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  text-align: center;
+  color: white;
+}
+
+.weather-app h1 {
+  margin-bottom: 20px;
+  font-size: 2em;
+  animation: fadeIn 2s ease-in-out;
+}
+
+.weather-app form {
+  margin-bottom: 20px;
+}
+
+.weather-app input[type="text"] {
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  margin-right: 10px;
+}
+
+.weather-app button {
+  padding: 10px 20px;
+  border-radius: 5px;
+  border: none;
+  background: #ff416c;
+  background: linear-gradient(to right, #ff4b2b, #ff416c);
+  color: white;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.weather-app button:hover {
+  background: #ff416c;
+  background: linear-gradient(to right, #ff416c, #ff4b2b);
+}
+
+.weather-details {
+  animation: fadeIn 1s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
